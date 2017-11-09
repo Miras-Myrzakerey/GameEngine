@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков\Defines">
+      <UniqueIdentifier>{2bbdc5f8-f632-4dfa-b218-a1a5ad7660fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Core">
+      <UniqueIdentifier>{9e65324b-b899-4011-a7cc-444f72b4bfae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Core\Main">
+      <UniqueIdentifier>{a0b4e663-24b5-41e3-b132-abb1fb9633ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\SceneGraph">
+      <UniqueIdentifier>{12b22abd-dbe4-4b77-a076-29ec02e83745}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\SceneGraph\Base">
+      <UniqueIdentifier>{bbf8c7c6-d3f7-4dc9-89c1-6762e9854eee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Core\Systems">
+      <UniqueIdentifier>{9cc0e245-e271-47c0-9e55-fca01b7d2622}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Defines\Context">
+      <UniqueIdentifier>{5d6d223e-38ea-41c8-b030-185a98a11dde}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="WinMain.cpp">
+      <Filter>Файлы заголовков\Core\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="UObject.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="System.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="WinMain.h">
+      <Filter>Файлы заголовков\Core\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="string.h">
+      <Filter>Файлы заголовков\Defines</Filter>
+    </ClInclude>
+    <ClInclude Include="iostream.h">
+      <Filter>Файлы заголовков\Defines</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="deletemacros.h">
+      <Filter>Файлы заголовков\Defines</Filter>
+    </ClInclude>
+    <ClInclude Include="UObject.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="System.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="context.h">
+      <Filter>Файлы заголовков\Defines\Context</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
