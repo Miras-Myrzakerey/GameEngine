@@ -34,22 +34,25 @@
     <Filter Include="Файлы заголовков\Defines\Context">
       <UniqueIdentifier>{5d6d223e-38ea-41c8-b030-185a98a11dde}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Файлы заголовков\Core\Systems\Base">
+      <UniqueIdentifier>{0d581de4-9852-4475-88ac-4de6fdabb31b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="WinMain.cpp">
       <Filter>Файлы заголовков\Core\Main</Filter>
     </ClCompile>
-    <ClCompile Include="Engine.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="UObject.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
     <ClCompile Include="System.cpp">
-      <Filter>Исходные файлы</Filter>
+      <Filter>Файлы заголовков\Core\Systems\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine.cpp">
+      <Filter>Файлы заголовков\Core</Filter>
     </ClCompile>
     <ClCompile Include="Game.cpp">
-      <Filter>Исходные файлы</Filter>
+      <Filter>Файлы заголовков\Core\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="UObject.cpp">
+      <Filter>Файлы заголовков\SceneGraph\Base</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -62,23 +65,23 @@
     <ClInclude Include="iostream.h">
       <Filter>Файлы заголовков\Defines</Filter>
     </ClInclude>
-    <ClInclude Include="Engine.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
     <ClInclude Include="deletemacros.h">
       <Filter>Файлы заголовков\Defines</Filter>
     </ClInclude>
-    <ClInclude Include="UObject.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="System.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Game.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
     <ClInclude Include="context.h">
       <Filter>Файлы заголовков\Defines\Context</Filter>
+    </ClInclude>
+    <ClInclude Include="System.h">
+      <Filter>Файлы заголовков\Core\Systems\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine.h">
+      <Filter>Файлы заголовков\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Файлы заголовков\Core\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="UObject.h">
+      <Filter>Файлы заголовков\SceneGraph\Base</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
