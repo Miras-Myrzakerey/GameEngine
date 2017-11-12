@@ -13,6 +13,7 @@
 class UObject
 {
 public:
+	UObject();
 	UObject(const std::tstring& name);
 	virtual ~UObject();
 
@@ -36,16 +37,16 @@ public:
 		return true;
 	}
 
-	virtual bool Update() {
+	virtual bool Update(Context& context) {
 		return true;
 	}
-	//virtual bool LateUpdate() {
+	//virtual bool LateUpdate(Context& context) {
 	//	return true
 	//}
-	virtual bool Draw() {
+	virtual bool Draw(Context& context) {
 		return true;
 	}
-	virtual bool DrawUI() {
+	virtual bool DrawUI(Context& context) {
 		return true;
 	}
 	virtual bool Shutdown() {
@@ -54,29 +55,27 @@ public:
 
 	virtual void Reset();
 
-	void SetName(const std::tstring& newName) { m_Name = newName };
-	const std::tstring& GetName() { return m_Name };
+	void SetName(const std::tstring& newName) { m_Name = newName; };
+	const std::tstring& GetName() { return m_Name; };
 
 
 	bool Initialized() { return m_bIsInitialized; }
-
 	bool isPostInitialized() { return m_bIsPostInitialized; }
-
 	bool isContentLoaded() { return m_bIsContentLoaded; }
-
 	bool isPostContentLoaded() {return m_bIsPostContentLoaded; }
 
 	void setCanTick(bool ct) { m_bCanTick = ct; }
-
 	bool CanTick() { return m_bCanTick; }
 
 	void setCanDraw(bool cd) { m_bCanDraw = cd; }
-
 	bool canDraw() { return m_bCanDraw; }
 
 	void Destroy() { m_bIsDestroyed = true; }
-
 	bool isDestroyed() {return m_bIsDestroyed; }
+
+	void Activate() { m_bIsActivated = true; }
+	void Deactivate() { m_bIsActivated = false; }
+	bool isActivated() { return m_bIsActivated; }
 
 protected:
 	static int m_objectAmount;
@@ -91,6 +90,7 @@ protected:
 	std::tstring m_Name;
 
 private:
+	bool m_bIsActivated;
 	bool m_bIsDestroyed;
 	bool m_bCanTick;
 	bool m_bCanDraw;

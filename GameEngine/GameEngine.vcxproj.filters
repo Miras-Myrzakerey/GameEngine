@@ -54,6 +54,9 @@
     <ClCompile Include="UObject.cpp">
       <Filter>Файлы заголовков\SceneGraph\Base</Filter>
     </ClCompile>
+    <ClCompile Include="Window.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="WinMain.h">
@@ -82,6 +85,9 @@
     </ClInclude>
     <ClInclude Include="UObject.h">
       <Filter>Файлы заголовков\SceneGraph\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.h">
+      <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
